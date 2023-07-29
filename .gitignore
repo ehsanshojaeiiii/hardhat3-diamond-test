@@ -1,6 +1,11 @@
 node_modules
-
-#Hardhat files
+.env
+coverage
+coverage.json
+typechain
+typechain-types
+.vscode
+# Hardhat files
 cache
 artifacts
-.env
+
