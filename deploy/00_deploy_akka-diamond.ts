@@ -33,15 +33,18 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
   })
   const DiamondInitInitializer = await ethers.getContractAt<DiamondInit>("DiamondInit", diamondLoupeFacet.address)
 
+
   const ownershipFacet = await deploy('OwnershipFacet', {
     from: deployer,
     log: true,
   })
+
+
   const OwnershipFacet = await ethers.getContractAt<OwnershipFacet>("OwnershipFacet", ownershipFacet.address)
   const ownershipFacetSelectors = Object.keys(OwnershipFacet.interface.functions).map(selector => OwnershipFacet.interface.getSighash(selector))
 
   try {
-    const akkaDiamond = await deploy('AkkaDiamond', {
+    const Diamond = await deploy('Diamond', {
       from: deployer,
       args: [
         [
@@ -67,7 +70,7 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
       log: true,
     })
   } catch (e: any) {
-    log("Failed to call akkaDiamond constructor:", e.reason)
+    log("Failed to call Diamond constructor:", e.reason)
 
   }
 

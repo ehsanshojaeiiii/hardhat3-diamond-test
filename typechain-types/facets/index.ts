@@ -4,5 +4,3 @@
 export type { DiamondCutFacet } from "./DiamondCutFacet";
 export type { DiamondLoupeFacet } from "./DiamondLoupeFacet";
 export type { OwnershipFacet } from "./OwnershipFacet";
-export type { Test1Facet } from "./Test1Facet";
-export type { Test2Facet } from "./Test2Facet";

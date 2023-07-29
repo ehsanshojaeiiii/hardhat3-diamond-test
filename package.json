@@ -1,21 +1,6 @@
 {
-  "name": "contracts-starter",
-  "version": "1.0.0",
-  "description": "Template for contract projects.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mudgen/contracts-starter.git"
-  },
-  "author": "Nick Mudge",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mudgen/contracts-starter/issues"
-  },
-  "homepage": "https://github.com/mudgen/contracts-starter#readme",
+  "name": "akka-hardhat-starter",
+  "description": "This repo used internally in Akka Dev Team as template",
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^2.0.0",
     "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers@^0.3.0-beta.13",

@@ -4,5 +4,3 @@
 export { DiamondCutFacet__factory } from "./DiamondCutFacet__factory";
 export { DiamondLoupeFacet__factory } from "./DiamondLoupeFacet__factory";
 export { OwnershipFacet__factory } from "./OwnershipFacet__factory";
-export { Test1Facet__factory } from "./Test1Facet__factory";
-export { Test2Facet__factory } from "./Test2Facet__factory";

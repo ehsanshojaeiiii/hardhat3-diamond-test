@@ -59,7 +59,7 @@ const config: HardhatUserConfig = {
       accounts: [`${privateKey}`, `${privateKey2}`],
     },
     mumbai: {
-      url: "https://rpc.ankr.com/polygon_mumbai",
+      url: "https://rpc-mumbai.maticvigil.com",
       chainId: 80001,
       accounts: [`${privateKey}`, `${privateKey2}`],
     },
@@ -88,6 +88,12 @@ const config: HardhatUserConfig = {
         }
       }
     },
+  },
+  etherscan: {
+    // Your API key for Etherscan
+    // Obtain one at https://bscscan.com/
+    apiKey: "JGX1CKSFRNPT87BX1FUU1243GD8W5KH7AF",
+    // mumbai: "JGX1CKSFRNPT87BX1FUU1243GD8W5KH7AF"
   },
   namedAccounts: {
     deployer: {
